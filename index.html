@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        section {
+            padding: 60px 20px;
+            margin-top: 50px;
+        }
+
+        #home {
+            height: 100vh;
+            background: url('background.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .profile-photo {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        #about {
+            background-color: #f4f4f4;
+        }
+
+        #projects {
+            background-color: #e4e4e4;
+        }
+
+        #contact {
+            background-color: #d4d4d4;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .scrolled {
+            background-color: #555 !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <img src="profile.jpg" alt="My Photo" class="profile-photo">
+            <h1>Hello, I'm saathvic</h1>
+            <p>Web Developer | Designer | Problem Solver</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I did my schooling at Delhi Public School and completed my intermediate studies at Aakash. Currently, I am pursuing a B.Tech at GITAM University. My hobbies include playing cricket and watching movies. My goal is to secure a high-paying job related to Android app development.</p>
+        <h3>Education</h3>
+        <ul>
+            <li>Intermediate,aakash</li>
+            <li>B-tech in Computer Science, gitam university</li>
+           
+        </ul>
+        <h3>Professional Experience</h3>
+        <ul>
+            <li>Web Developer</li>
+            <li>Android app developer</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3> created ai car website</h3>
+            <p> a website dedicated to AI-powered self-driving cars! This website provides an in-depth look at the technology behind autonomous vehicles, including their features and functions, as well as insights into the major companies leading the charge in this innovative field. Whether you're an industry expert or just curious about the future of transportation, this website is a valuable resource.</p>
+        </div>
+        <div class="project">
+            <h3>created cloud computing website</h3>
+            <p> Explore the latest in cloud services with in-depth guides on AWS, Azure, and Google Cloud Platform (GCP), along with insights into Continuous Integration/Continuous Deployment (CI/CD) practices. Whether you're new to the cloud or a seasoned professional, dive into resources on scalable computing, storage solutions, and efficient deployment strategies. Visit https://lnkd.in/gQeak8WF today to elevate your cloud knowledge and stay ahead in the digital transformation journey</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via <a href="mailto:smadaka2@gitam.in">email</a> or connect with me on <a href="https://www.linkedin.com/in/yourprofile/">LinkedIn</a>.</p>
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
